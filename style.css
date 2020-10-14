@@ -13,11 +13,13 @@ body {
 
 /* Navigation */
 nav {
-    height: 40px;
+    height: 41px;
     width: 100%;
     background-color: #333;
     color: #eee;
     position: fixed;
+    opacity: 0.85;
+    z-index: 2;
 }
 
 nav li {
@@ -30,7 +32,11 @@ nav a {
     text-decoration: none;
     text-align: center;
     color: #ddd;
-    padding: 7px 20px;
+    padding: 8px 20px 7.5px  20px;
+}
+
+nav li:first-child {
+    font-weight: 700;
 }
 
 nav li:hover {
@@ -39,6 +45,47 @@ nav li:hover {
 
 nav a#openup {
     display: none;
+}
+
+/* background */
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/study.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    transition: all 1000ms;
+}
+.showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.main {
+    position: absolute;
+    z-index: 1;
+    top: 22%;
+    left: 7%;
+    color: #444;
+}
+
+.main h1 {
+    font-size: 7rem;
+    /* font-family: 'Almarai', sans-serif; */
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    line-height: 0.9;
+    margin-bottom: 30px;
+    width: 200px;
+}
+
+.main p {
+    width: 650px;
+    font-size: 1.2rem;
 }
   
 @media screen and (max-width: 580px) {
