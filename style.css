@@ -131,6 +131,18 @@ nav a#openup {
       width: 100%;
       position: relative;
     }
+
+    .main {
+        top: 14%;
+    }
+    .main p {
+        display: none;
+    }
+
+    .main h1 {
+        font-size: 4rem;
+    }
+
   }
   .cf:before, .cf:after {
     content: "";
