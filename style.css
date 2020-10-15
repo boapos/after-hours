@@ -153,9 +153,9 @@ h3 {
     .main {
         top: 12%;
     }
-    .main p {
+    /* .main p {
         display: none;
-    }
+    } */
 
     .main h1 {
         font-size: 4.5rem;
