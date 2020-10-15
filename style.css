@@ -149,27 +149,6 @@ h3 {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 580px){
-    .main {
-        top: 12%;
-    }
-    /* .main p {
-        display: none;
-    } */
-
-    .main h1 {
-        font-size: 4.5rem;
-    }
-    .showcase::after {
-        height:60vh;
-    }
-    .grid-3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-}
-  
 @media screen and (max-width: 580px) {
     nav {
       height: auto;
@@ -212,6 +191,27 @@ h3 {
       background-color: #333;
       width: 100%;
       position: relative;
+    }
+
+    /* own queries */
+    
+    .main {
+        top: 12%;
+    }
+    .main p {
+        display: none;
+    }
+
+    .main h1 {
+        font-size: 4.5rem;
+    }
+    .showcase::after {
+        height:60vh;
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
   }
   .cf:before, .cf:after {
