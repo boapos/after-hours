@@ -40,7 +40,7 @@ nav li:first-child {
 }
 
 nav li:hover {
-    background-color: #545454;
+    background-color: #444;
 }
 
 nav a#openup {
@@ -204,7 +204,7 @@ h3 {
       text-align: left;
       width: 100%;
       text-indent: 25px;
-      background: #333;
+      background: ##1e1e1e;
     }
     nav a:hover {
       background: #444;
@@ -225,7 +225,7 @@ h3 {
     }
     nav a#openup {
       display: block;
-      background-color: #333;
+      background-color: #1e1e1e;
       width: 100%;
       position: relative;
     }
