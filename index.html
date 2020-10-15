@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
@@ -11,14 +12,14 @@
 </head>
 <body>
     <!-- Showcase and Nav -->
-    <div class="showcase">
+    <div id="showcase" class="showcase">
         <header>
             <nav class="cf">
                 <ul class="cf">
                     <li><a href="#showcase">after hours</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">rates</a></li>
-                    <li><a href="#">directions</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#rates">rates</a></li>
+                    <li><a href="#location">location</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
                 <a href='#' id='openup'>menu</a>
@@ -31,10 +32,59 @@
     </div>
 
     <!-- Services section -->
-
+    <secttion id="services" class="services">
+        <div class="container grid-3 center">
+            <div>
+                <i class="fas fa-book-open"></i>
+                <h3>workspace</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eveniet.</p>
+            </div>
+            <div>
+                <i class="fas fa-wifi"></i>
+                <h3>fiber connection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, mollitia.</p>
+            </div>
+            <div>
+                <i class="fas fa-mug-hot"></i>
+                <h3>coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cum.</p>
+            </div>
+        </div>
+    </secttion>
     <!-- Rates section -->
-
+    <section id="rates" class="rates light-bg">
+        <div class="container grid-2 center">
+            <div class="student">
+                <h3>STUDENT</h3>
+                <section class="price">
+                    <h4 class="amt">25</h4>
+                    <p>PHP PER HOUR</p>
+                </section>
+                <section class="price">
+                    <h4 class="amt">150</h4>
+                    <p>DAY PASS</p>
+                </section>
+            </div>
+            <div class="regular">
+                <h3>REGULAR</h3>
+                <section class="price">
+                    <h4 class="amt">35</h4>
+                    <p>PHP PER HOUR</p>
+                </section>
+                <section class="price">
+                    <h4 class="amt">200</h4>
+                    <p>DAY PASS</p>
+                </section>
+            </div>
+        </div>
+    </section>
     <!-- Map section -->
+    <section id="location" class="location">
+        <div class="container center">
+            <h3>Find us here!</h3>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.1594231054974!2d123.3414092153592!3d8.580665998210662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325497bb889eb1e5%3A0x14dbf63399437b92!2sAfter%20Hours!5e0!3m2!1sen!2sph!4v1602751242885!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
 
     <!-- Footer and Contact -->
 
